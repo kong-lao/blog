@@ -1,6 +1,10 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import About from "./views/About.vue";
+import SBigFish from "./views/dance-storys/SBigFish.vue";
+import SSaySomething from "./views/dance-storys/SSaySomething.vue";
+import SWind from "./views/dance-storys/SWind.vue";
 
 Vue.use(Router);
 
@@ -12,13 +16,24 @@ export default new Router({
       component: Home
     },
     {
-      path: "/about",
+      path: "/About",
       name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
+      component: About
+    },
+    {
+      path: "/SBigFish",
+      name: "sbigfish",
+      component: SBigFish
+    },
+    {
+      path: "/SSaySomething",
+      name: "ssaysomething",
+      component: SSaySomething
+    },
+    {
+      path: "/SWind",
+      name: "swind",
+      component: SWind
     }
   ]
 });
