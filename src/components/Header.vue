@@ -7,6 +7,21 @@
         <router-link to="/">thelightchaser</router-link>
       </div>
       <div class="right">
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M4.5 8.25H25.5V11.25H4.5V8.25ZM4.5 13.5H25.5V16.5H4.5V13.5ZM25.5 18.75H4.5V21.75H25.5V18.75Z"
+            fill="#222222"
+          />
+        </svg>
+
         <ul>
           <li v-on:mouseenter="visible1" @mouseleave="display1">
             <router-link to="/">dance storys</router-link>
@@ -72,34 +87,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media screen {
-  * {
-    padding: 0;
-    padding: 0;
-  }
-  ul,
-  li,
-  ol {
-    list-style: none;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .left {
-    width: 272px;
-    height: 137px;
-    line-height: 137px;
-    font-weight: 900;
-    font-size: 24px;
-    color: $black;
-  }
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $black;
-  }
-
+* {
+  padding: 0;
+  padding: 0;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  width: 272px;
+  height: 137px;
+  line-height: 137px;
+  font-weight: 900;
+  font-size: 24px;
+  color: $black;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+}
+@media screen and (min-width: 904px) {
   .right {
     font-weight: 500;
     font-size: 18px;
@@ -108,16 +122,24 @@ export default {
     > ul {
       > li {
         display: inline-block;
-        padding: 58px 26px;
-        background: #fff;
+        margin: 58px 26px;
         > ul {
           position: absolute;
+          background: #fff;
+          margin-left: -38px;
           > li {
             margin: 58px 0;
+            width: 207px;
           }
         }
       }
     }
+    > svg {
+      display: none;
+    }
   }
+}
+
+@media screen and(max-width: 904px) {
 }
 </style>
