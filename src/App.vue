@@ -11,15 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $black;
+  padding: 0 48px;
 }
-#nav {
-  padding: 20px;
-  a {
-    font-weight: bold;
-    color: $black;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+* {
+  margin: 0;
+  padding: 0;
 }
 </style>

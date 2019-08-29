@@ -7,9 +7,13 @@
         <router-link to="/">thelightchaser</router-link>
       </div>
       <div class="right">
-        <div>
-          <router-link to="/about">about me</router-link>
-        </div>
+        <ul>
+          <li>dance works</li>
+          <li>dance storys</li>
+          <li>
+            <router-link to="/about">about me</router-link>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -25,5 +29,21 @@ export default {
 .header {
   display: flex;
   justify-content: space-between;
+}
+.left {
+  width: 272px;
+  height: 137px;
+  line-height: 137px;
+  @include heading-1;
+}
+.right {
+  @include heading-2;
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 58px 26px;
+    }
+  }
 }
 </style>
