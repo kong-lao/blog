@@ -10,7 +10,7 @@
         <ul>
           <li v-on:mouseenter="visible1" @mouseleave="display1">
             <router-link to="/">dance storys</router-link>
-            <ul v-show="seen1" class="display">
+            <ul v-show="seen1">
               <li>
                 <router-link to="/">wind</router-link>
               </li>
@@ -24,7 +24,7 @@
           </li>
           <li v-on:mouseenter="visible2" @mouseleave="display2">
             <router-link to="/">dance works</router-link>
-            <ul v-show="seen2" class="display">
+            <ul v-show="seen2">
               <li>
                 <router-link to="/">wind</router-link>
               </li>
@@ -72,35 +72,52 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-.left {
-  width: 272px;
-  height: 137px;
-  line-height: 137px;
-  @include heading-1;
-}
-.right {
-  @include heading-2;
-  > ul {
+@media screen {
+  * {
+    padding: 0;
+    padding: 0;
+  }
+  ul,
+  li,
+  ol {
     list-style: none;
-    > li {
-      display: inline-block;
-      margin: 58px 26px;
-      > .display {
-        list-style: none;
-        position: absolute;
-        > li {
-          margin: 29px 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left {
+    width: 272px;
+    height: 137px;
+    line-height: 137px;
+    font-weight: 900;
+    font-size: 24px;
+    color: $black;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  .right {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $black;
+    > ul {
+      > li {
+        display: inline-block;
+        padding: 58px 26px;
+        background: #fff;
+        > ul {
+          position: absolute;
+          > li {
+            margin: 58px 0;
+          }
         }
       }
     }
   }
-}
-a {
-  text-decoration: none;
-  color: $black;
 }
 </style>
