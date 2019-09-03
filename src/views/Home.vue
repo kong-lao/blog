@@ -3,7 +3,10 @@
     <heading />
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <div class="pcBox phBox">
-      <img src="../../public/1.jpg" alt />
+      <img
+        src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g2/M00/06/08/ChMlWV1Dlw-IaFobACS9k0vYGkIAAMTbgPQaL4AJL2r503.jpg"
+        alt
+      />
       <img src="../../public/2.jpg" alt />
       <img src="../../public/3.jpg" alt />
       <img src="../../public/4.jpg" alt />
