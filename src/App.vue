@@ -11,7 +11,16 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $black;
-  padding: 0 48px;
+}
+@media screen and (min-width: 904px) {
+  #app {
+    padding: 0 48px;
+  }
+}
+@media screen and(max-width: 904px) {
+  #app {
+    padding: 0 16px;
+  }
 }
 * {
   margin: 0;
