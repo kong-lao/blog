@@ -195,9 +195,8 @@ a {
 
 @media screen and(max-width: 904px) {
   .left {
-    margin-left: 10px;
-    height: 90px;
-    line-height: 90px;
+    margin-left: 26px;
+    line-height: 137px;
     font-weight: 900;
     font-size: 24px;
     color: $black;
@@ -207,7 +206,7 @@ a {
   }
   .phRight {
     > svg {
-      height: 90px;
+      height: 137px;
       margin-right: 10px;
     }
   }

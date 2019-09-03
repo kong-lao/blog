@@ -3,17 +3,12 @@
     <heading />
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <div class="pcBox phBox">
-      <img
-        src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g2/M00/06/08/ChMlWV1Dlw-IaFobACS9k0vYGkIAAMTbgPQaL4AJL2r503.jpg"
-        alt
-      />
-      <img src="../../public/2.jpg" alt />
-      <img src="../../public/3.jpg" alt />
-      <img src="../../public/4.jpg" alt />
-      <img src="../../public/1.jpg" alt />
-      <img src="../../public/2.jpg" alt />
-      <img src="../../public/3.jpg" alt />
-      <img src="../../public/4.jpg" alt />
+      <img src="https://i.imgsafe.org/e3/e3f3760d3e.jpeg" alt />
+      <img src="https://i.imgsafe.org/e3/e3f3dc97c5.jpeg" alt />
+      <img src="https://i.imgsafe.org/e3/e3f3c1da9f.jpeg" alt />
+      <img src="https://i.imgsafe.org/e3/e3f378b881.jpeg" alt />
+      <img src="https://i.imgsafe.org/e3/e3f42851d8.jpeg" alt />
+      <img src="https://i.imgsafe.org/e3/e3f4031ec6.jpeg" alt />
     </div>
   </div>
 </template>
@@ -39,8 +34,8 @@ export default {
     img {
       box-sizing: border-box;
       display: inline-block;
-      width: 50%;
-      height: 100%;
+      max-width: 50%;
+      height: auto;
       padding: 10px;
     }
   }
