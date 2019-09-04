@@ -8,7 +8,7 @@ npm run build
 cd dist
 
 # 部署到自定义域域名
-# echo 'thelightchaser.tk' > CNAME
+echo 'thelightchaser.tk' > CNAME
 
 git init
 git add -A

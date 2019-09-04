@@ -19,7 +19,7 @@
 }
 @media screen and(max-width: 904px) {
   #app {
-    padding: 0 48px;
+    padding: 0 16px;
   }
 }
 * {

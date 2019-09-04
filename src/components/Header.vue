@@ -91,7 +91,9 @@
             </ul>
           </li>
           <li>
-            <router-link to="/about">about me</router-link>
+            <div>
+              <router-link to="/about">about me</router-link>
+            </div>
           </li>
         </ul>
       </div>
@@ -156,6 +158,7 @@ a {
   text-transform: uppercase;
   color: $black;
 }
+// 电脑
 @media screen and (min-width: 904px) {
   .left {
     margin-left: 26px;
@@ -192,10 +195,10 @@ a {
     display: none;
   }
 }
-
+// 手机
 @media screen and(max-width: 904px) {
   .left {
-    margin-left: 26px;
+    margin-left: 16px;
     line-height: 137px;
     font-weight: 900;
     font-size: 24px;
@@ -207,20 +210,24 @@ a {
   .phRight {
     > svg {
       height: 137px;
-      margin-right: 10px;
+      margin-right: 16px;
     }
   }
   .phShow {
     // display: none;
-    li {
-      margin-bottom: 10px;
-    }
     ul {
+      li {
+      }
       ul {
         margin-top: 20px;
       }
       li {
+        margin-bottom: 28px;
         div {
+          font-weight: 800;
+          line-height: 21px;
+          font-size: 18px;
+          margin-bottom: 10px;
           text-decoration: none;
           text-transform: uppercase;
           color: $black;
