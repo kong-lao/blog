@@ -13,13 +13,13 @@
               <router-link to="/">dance storys</router-link>
               <ul v-show="pcSeen1">
                 <li>
-                  <router-link to="/">wind</router-link>
+                  <router-link to="/storys/RoutineOfTheDance">我和舞蹈的日常</router-link>
                 </li>
                 <li>
-                  <router-link to="/">big fish</router-link>
+                  <router-link to="/storys/DanceTroupe">我与舞蹈团</router-link>
                 </li>
                 <li>
-                  <router-link to="/about">say something</router-link>
+                  <router-link to="/storys/SportsMeeting">舞蹈与运动会开幕式的不解之缘</router-link>
                 </li>
               </ul>
             </li>
@@ -27,13 +27,19 @@
               <router-link to="/">dance works</router-link>
               <ul v-show="pcSeen2">
                 <li>
-                  <router-link to="/">wind</router-link>
+                  <router-link to="/works/SeeAgain">再遇见</router-link>
                 </li>
                 <li>
-                  <router-link to="/">big fish</router-link>
+                  <router-link to="/works/BigFish">大鱼</router-link>
                 </li>
                 <li>
-                  <router-link to="/">say something</router-link>
+                  <router-link to="/works/SaySomething">Say Something</router-link>
+                </li>
+                <li>
+                  <router-link to="/works/ChasingLight">追光者</router-link>
+                </li>
+                <li>
+                  <router-link to="/works/Cool">酷傣</router-link>
                 </li>
               </ul>
             </li>
@@ -66,13 +72,13 @@
             <div v-on:click="phVisible2">dance storys</div>
             <ul v-show="phSeen2">
               <li>
-                <router-link to="/">wind</router-link>
+                <router-link to="/storys/RoutineOfTheDance">我和舞蹈的日常</router-link>
               </li>
               <li>
-                <router-link to="/">big fish</router-link>
+                <router-link to="/storys/DanceTroupe">我与舞蹈团</router-link>
               </li>
               <li>
-                <router-link to="/about">say something</router-link>
+                <router-link to="/storys/SportsMeeting">舞蹈与运动会开幕式的不解之缘</router-link>
               </li>
             </ul>
           </li>
@@ -80,13 +86,19 @@
             <div v-on:click="phVisible3">dance works</div>
             <ul v-show="phSeen3">
               <li>
-                <router-link to="/">wind</router-link>
+                <router-link to="/works/SeeAgain">再遇见</router-link>
               </li>
               <li>
-                <router-link to="/">big fish</router-link>
+                <router-link to="/works/BigFish">大鱼</router-link>
               </li>
               <li>
-                <router-link to="/">say something</router-link>
+                <router-link to="/works/SaySomething">Say Something</router-link>
+              </li>
+              <li>
+                <router-link to="/works/ChasingLight">追光者</router-link>
+              </li>
+              <li>
+                <router-link to="/works/Cool">酷傣</router-link>
               </li>
             </ul>
           </li>
