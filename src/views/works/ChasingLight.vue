@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box">
     <h1>《追光者》</h1>
     <br />
     <iframe

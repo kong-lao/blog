@@ -6,6 +6,10 @@
 </template>
 
 <style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -13,21 +17,7 @@
   text-align: center;
   color: $black;
 }
-iframe {
-  width: 800px;
-  height: 600px;
-}
-h1 {
-  margin-top: 40px;
-}
-p {
-  text-indent: 2em;
-  text-align: left;
-}
-img {
-  max-width: 800px;
-  width: 100%;
-}
+
 @media screen and (min-width: 904px) {
   #app {
     padding: 0 48px;
@@ -37,10 +27,6 @@ img {
   #app {
     padding: 0 16px;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
 }
 </style>
 

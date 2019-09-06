@@ -31,22 +31,17 @@ export default {};
     img {
       box-sizing: border-box;
       display: inline-block;
-      max-width: 50%;
-      height: auto;
+      width: 50%;
       padding: 10px;
     }
   }
 }
 @media screen and(max-width: 904px) {
   .phBox {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
     img {
       box-sizing: border-box;
       display: inline-block;
       width: 100%;
-      height: 100%;
       padding: 6px;
     }
   }

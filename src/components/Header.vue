@@ -19,7 +19,7 @@
                   <router-link to="/storys/DanceTroupe">我与舞蹈团</router-link>
                 </li>
                 <li>
-                  <router-link to="/storys/SportsMeeting">舞蹈与运动会开幕式的不解之缘</router-link>
+                  <router-link to="/storys/SportsMeeting">舞蹈与运动会</router-link>
                 </li>
               </ul>
             </li>
@@ -40,6 +40,9 @@
                 </li>
                 <li>
                   <router-link to="/works/Cool">酷傣</router-link>
+                </li>
+                <li v-on:click="phClose">
+                  <router-link to="/works/Wind">风</router-link>
                 </li>
               </ul>
             </li>
@@ -71,39 +74,42 @@
           <li>
             <div v-on:click="phVisible2">dance storys</div>
             <ul v-show="phSeen2">
-              <li>
+              <li v-on:click="phClose">
                 <router-link to="/storys/RoutineOfTheDance">我和舞蹈的日常</router-link>
               </li>
-              <li>
+              <li v-on:click="phClose">
                 <router-link to="/storys/DanceTroupe">我与舞蹈团</router-link>
               </li>
-              <li>
-                <router-link to="/storys/SportsMeeting">舞蹈与运动会开幕式的不解之缘</router-link>
+              <li v-on:click="phClose">
+                <router-link to="/storys/SportsMeeting">舞蹈与运动会</router-link>
               </li>
             </ul>
           </li>
           <li>
             <div v-on:click="phVisible3">dance works</div>
             <ul v-show="phSeen3">
-              <li>
+              <li v-on:click="phClose">
                 <router-link to="/works/SeeAgain">再遇见</router-link>
               </li>
-              <li>
+              <li v-on:click="phClose">
                 <router-link to="/works/BigFish">大鱼</router-link>
               </li>
-              <li>
+              <li v-on:click="phClose">
                 <router-link to="/works/SaySomething">Say Something</router-link>
               </li>
-              <li>
+              <li v-on:click="phClose">
                 <router-link to="/works/ChasingLight">追光者</router-link>
               </li>
-              <li>
+              <li v-on:click="phClose">
                 <router-link to="/works/Cool">酷傣</router-link>
+              </li>
+              <li v-on:click="phClose">
+                <router-link to="/works/Wind">风</router-link>
               </li>
             </ul>
           </li>
           <li>
-            <div>
+            <div v-on:click="phClose">
               <router-link to="/about">about me</router-link>
             </div>
           </li>
@@ -150,6 +156,9 @@ export default {
     phVisible3: function() {
       this.phSeen3 = !this.phSeen3;
       this.phSeen2 = false;
+    },
+    phClose: function() {
+      this.phSeen1 = false;
     }
   }
 };

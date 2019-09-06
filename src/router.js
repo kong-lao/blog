@@ -10,11 +10,13 @@ import DanceTroupe from "./views/storys/DanceTroupe.vue";
 import ChasingLight from "./views/works/ChasingLight.vue";
 import Cool from "./views/works/Cool.vue";
 import SportsMeeting from "./views/storys/SportsMeeting.vue";
+import Wind from "./views/works/Wind.vue";
 
 Vue.use(Router);
 
 export default new Router({
-  routes: [{
+  routes: [
+    {
       path: "/",
       name: "home",
       component: Home
@@ -63,6 +65,11 @@ export default new Router({
       path: "/storys/SportsMeeting",
       name: "sportsmeeting",
       component: SportsMeeting
+    },
+    {
+      path: "/works/Wind",
+      name: "wind",
+      component: Wind
     }
   ]
 });

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box">
     <h1>酷傣</h1>
     <br />
     <iframe

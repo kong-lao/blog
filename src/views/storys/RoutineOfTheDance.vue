@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box">
     <h1>我和舞蹈的日常</h1>
     <br />
     <br />

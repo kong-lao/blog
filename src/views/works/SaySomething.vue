@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box">
     <h1>《Say Something》</h1>
     <br />
     <iframe
